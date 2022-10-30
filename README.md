@@ -1,4 +1,4 @@
-# Best-Doggy-for-Me
+# 나의 찰떡동물은?
 
 ![슬라이드1](https://user-images.githubusercontent.com/55667589/198891958-7b573fbc-af06-4bc4-8440-e62de49f0351.png)
 ![슬라이드2](https://user-images.githubusercontent.com/55667589/198891967-c6336c6c-e824-44cd-91c0-08f429062e7e.png)

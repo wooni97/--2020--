@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!--
+   Spatial by TEMPLATED
+   templated.co @templatedco
+   Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+   <head>
+      <title>Generic - Spatial by TEMPLATED</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+     <link rel="stylesheet" href="assets/css/loading.css"/>
+     <link rel="stylesheet" href="assets/css/result.css"/>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
+        <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=oi0dy3n7ns&submodules=geocoder"></script>
+   </head>
+   <body>
+      <div class="wrap-loading display-none">
+         <div><img src="./images/loading1.gif" /></div> 
+      </div> 
+
+      <!-- Header -->
+         <header id="header">
+            <h1>나의<strong><a href="index.html"> 찰떡동물은?</a></strong></h1>
+            <nav id="nav">
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="generic.html">Generic</a></li>
+                  <li><a href="elements.html">Elements</a></li>
+               </ul>
+            </nav>
+         </header>
+
+       <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+         <!-- One -->
+         <section id="one" class="wrapper style1">
+            <div class="container 75%">
+               <div class="row 200%">
+                  <div class="6u 12u$(medium)">
+                     <header class="major">
+                        <h2 id ="dogName">Maecenas luctus lectus</h2>
+                        <p><img id="dogImg" src="images/pic02.jpg" alt="image" width="350" align = "left"/></p>
+
+                     </header>
+                  </div>
+                  <div class="6u$ 12u$(medium)">
+                     <div class = "bar-container" >
+                        <h4>적응력</h4>
+                        <div class="css-databar bar" id="dataBar">
+                           <div class="w3-container w3-blue w3-round-large" id="dataBarFull1"></div>
+                        </div>
+                     </div>
+                     <div class = "bar-container" >
+                        <h4>친화력</h4>
+                        <div class="css-databar bar" id="dataBar">
+                           <div class="w3-container w3-blue w3-round-large" id="dataBarFull2"></div>
+                        </div>
+                     </div>
+                     <div class = "bar-container" >
+                        <h4>건강케어</h4>
+                        <div class="css-databar bar" id="dataBar">
+                           <div class="w3-container w3-blue w3-round-large" id="dataBarFull3"></div>
+                        </div>
+                     </div>
+                     <div class = "bar-container" >
+                        <h4>충성심</h4>
+                        <div class="css-databar bar" id="dataBar">
+                           <div class="w3-container w3-blue w3-round-large" id="dataBarFull4"></div>
+                        </div>
+                     </div>
+                     <div class = "bar-container" >
+                        <h4>활동력</h4>
+                        <div class="css-databar bar" id="dataBar">
+                           <div class="w3-container w3-blue w3-round-large" id="dataBarFull5"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>       
+
+
+         <!-- Info -->
+               <section id="Main" class="wrapper style2 special" >
+                  <div class="container">
+                     <header class="major">
+                        <h2 id="name1">name</h2>
+                        <p>믹스견 정보가 나온다면 해당 견종을 보호하고 있는 보호소가 없어서 대신 나온 것입니다.</p>
+                     </header>
+
+                     <hr />
+
+
+                     <div class="container 75%">
+                        <div class="row 300%">
+                           <div class="6u 12u$(medium)" style = "padding: 5px;">
+                              <header class="major">
+                                 <h4 id="content1">age</h4>
+                                 <br>
+                                 <h4 id="content2">careNm</h4>
+                                 <br>
+                                 <h4 id="content3">careTel</h4>
+                                 <br>
+                                 <h4 id="content4">chargeNm</h4>
+                                 <br>
+                                 <h4 id="content5">colorCd</h4>
+                                 <br>
+                                 <h4 id="content6">breed</h4>
+                                 <br>
+                                 <h4 id="content7">weight</h4>
+                                 <br>
+                                 <h4 id="content8">characteristic</h4>
+                                 <br>
+                                 <h4 id="content9">sexCd</h4>
+                              </header>
+                           </div>
+                           <div class="6u$ 12u$(medium)">
+                              <img id="img1" src="images/pic02.jpg" alt="image" width="500" />
+                              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ea mollitia corporis id, distinctio sunt veritatis officiis dolore reprehenderit deleniti voluptatibus harum magna, doloremque alias quisquam minus, eaque. Feugiat quod, nesciunt! Iste quos ipsam, iusto sit esse.</p>
+                              <p>Dolorum aspernatur maxime libero ratione quidem distinctio, placeat fugiat laborum voluptatum enim neque soluta vel sunt id ex veritatis. Labore rerum, odit sapiente, alias mollitia magnam exercitationem modi amet earum quia atque ipsum voluptas asperiores quas laboriosam.</p> -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+
+         <!-- Map -->
+               <section id="navermap" class="wrapper style1 special">
+                  <div class="container">
+                     <header class="major">
+                        <h2>지도 및 주소 정보</h2>
+                        <p id="content10">careAddr</p>
+                     </header>
+
+                     <hr />
+
+
+                     <form class="js-map">
+                        <div id="map" style="width:100%;height:600px;"></div>
+                        <style>
+                           .iw_inner {padding:10px}
+                           .iw_inner h3 {font-size: 18px; padding-bottom: 7px}
+                        </style>
+                          </form>
+                  </div>
+               </section>
+
+      <!-- Footer -->
+         <footer id="footer">
+            <div class="container">
+               <ul class="icons">
+                  <li><a href="#" class="icon fa-facebook"></a></li>
+                  <li><a href="#" class="icon fa-twitter"></a></li>
+                  <li><a href="#" class="icon fa-instagram"></a></li>
+               </ul>
+               <ul class="copyright">
+                  <li>&copy; Untitled</li>
+                  <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+                  <li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+                    </ul>
+            </div>
+         </footer>
+
+      <!-- Scripts -->
+         <script src="assets/js/jquery.min.js"></script>
+         <script src="assets/js/skel.min.js"></script>
+         <script src="assets/js/util.js"></script>
+         <script src="assets/js/main.js"></script>
+         <script src="location.js"></script>
+         <!--<script src="assets/js/location.js"></script> -->
+            <!-- <script src="location_get.js"></script> -->
+
+   </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Result</title>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/loading.css"/>
+		<link rel="stylesheet" href="assets/css/result.css"/>
+	</head>
+	<body>
+		<div class="wrap-loading display-none">
+			<div><img src="./images/loading1.gif" /></div> 
+		</div>
+
+				<!-- Header -->
+				<header id="header">
+					<h1>나의<strong><a href="index.html"> 찰떡동물은?</a></strong></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">About</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
+				</header>
+	
+				<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+	
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="container">
+							<header class="major">
+								<h2>나의 찰떡동물은?</h2>
+								<p>1위에서 3위까지의 견종을 보여줍니다</p>
+							</header>
+
+							<hr />
+
+
+							<div class="container 75%">
+								<div class="row 200%">
+									<div class="6u 12u$(medium)">
+										<header class="major">
+											<h2 id="name1">1위 이름</h2>
+											<p id="content1">1위 설명</p>
+										</header>
+										<ul class="actions">
+											<li><a href='map.html?num=0' class="button" id="button1">자세히</a></li>
+										</ul>
+									</div>
+									<div class="6u$ 12u$(medium)">
+										<img id="img1" src="images/pic02.jpg" alt="image" />
+										<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ea mollitia corporis id, distinctio sunt veritatis officiis dolore reprehenderit deleniti voluptatibus harum magna, doloremque alias quisquam minus, eaque. Feugiat quod, nesciunt! Iste quos ipsam, iusto sit esse.</p>
+										<p>Dolorum aspernatur maxime libero ratione quidem distinctio, placeat fugiat laborum voluptatum enim neque soluta vel sunt id ex veritatis. Labore rerum, odit sapiente, alias mollitia magnam exercitationem modi amet earum quia atque ipsum voluptas asperiores quas laboriosam.</p> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+	
+				<!-- Two -->
+					<section id="two" class="wrapper style2 special">
+						<div class="container">
+							<header class="major">
+								<h2>나의 다른 찰떡동물은?</h2>
+								<p>Maecenas vitae tellus feugiat eleifend</p>
+							</header>
+							<div class="row 150%">
+								<div class="6u 12u$(xsmall)">
+									<div class="image fit captioned">
+										<img id="img2"src="images/pic02.jpg" alt="image" />
+											<h3 id="name2">2위 이름</h3>
+											<p id="content2">2위 설명</p>
+										<ul class="actions">
+											<li><a href='map.html?num=1' class="button" id="button2">자세히</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="6u$ 12u$(xsmall)">
+									<div class="image fit captioned">
+										<img id="img3" src="images/pic03.jpg" alt="image" />
+										<h3 id="name3">3위 이름</h3>
+										<p id="content3">3위 설명</p>
+										<ul class="actions">
+											<li><a href='map.html?num=2' class="button" id="button3">자세히</a></li>
+										</ul>
+									</div>
+								</div>
+							<!-- </div>
+							<ul class="actions">
+								<li><a href="#" class="button special big">Nulla luctus</a></li>
+								<li><a href="#" class="button big">Sed vulputate</a></li>
+							</ul>-->
+						</div>
+					</section>
+
+				<!-- <form class="js-form">
+                    <input type="button" id="getButton" value="결과 가져오기">
+                    <input type="button" id="nextButton" value="유기견 정보보기">
+				</form>
+									
+				<p>
+					<table id="dog_result" border="1">
+						<tr align="center">
+							<th>Dog Name</th>
+							<th>About Dog</th>
+						</tr>
+					</table>
+				</p>
+
+
+					<svg width ="500" height ="500"></svg>
+					<script src = "http://d3js.org/d3.v3.js"></script>
+					<script>        
+					const vision_list = [adap, frinedli, health, trainability, physical2]
+					//const vision_list = [5, 10, 15, 20 , 25]
+					const color = ['skyblue', 'blue', 'lime', 'red', 'yellowgreen']
+					const svg = d3.select('svg')
+
+					svg.selectAll('bar').data(vision_list).enter().append('rect')
+					.attr('fill', (d,i) => {return color[i]})
+					.attr('height', (d,i) => {return d})
+					.attr('width', 40)
+					.attr('x', (d,i) => {return 50 * i})
+					.attr('y', (d,i) => {return 100 - vision_list[i]})
+					</script> -->
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-facebook"></a></li>
+						<li><a href="#" class="icon fa-twitter"></a></li>
+						<li><a href="#" class="icon fa-instagram"></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/result.js"></script>
+	</body>
+</html>

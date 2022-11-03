@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TestPage</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#button").click(function(){
+            callAjax();
+            //location.href = 'test2.html'
+        });
+      });
+      function callAjax(){
+        var inputData = {
+            answer1 : 1,
+            answer2 : $("input[name=answer2]:checked").val(),
+            answer3 : $("input[name=answer3]:checked").val(),
+            answer4 : $("input[name=answer4]:checked").val(),
+            answer5 : $("input[name=answer5]:checked").val(),
+            answer6 : $("input[name=answer6]:checked").val(),
+            answer7 : $("input[name=answer7]:checked").val(),
+            answer8 : $("input[name=answer8]:checked").val(),
+            answer9 : $("input[name=answer9]:checked").val(),
+            answer10 : $("input[name=answer10]:checked").val(),
+            answer11 : $("input[name=answer11]:checked").val(),
+            answer12 : $("input[name=answer12]:checked").val(),
+            answer13 : $("input[name=answer13]:checked").val(),
+            answer14 : $("input[name=answer14]:checked").val(),
+            answer15 : $("input[name=answer15]:checked").val(),
+            answer16 : $("input[name=answer16]:checked").val(),
+            answer17 : $("input[name=answer17]:checked").val(),
+            answer18 : $("input[name=answer18]:checked").val(),
+            answer19 : $("input[name=answer19]:checked").val(),
+            answer20 : $("input[name=answer20]:checked").val(),
+            answer21 : $("input[name=answer21]:checked").val(),
+            answer22 : $("input[name=answer22]:checked").val(),
+            answer23 : $("input[name=answer23]:checked").val(),
+            answer24 : $("input[name=answer24]:checked").val(),
+            answer25 : $("input[name=answer25]:checked").val(),
+            answer26 : $("input[name=answer26]:checked").val()
+        };
+
+        $.ajax({
+          url : 'https://2invb6dj4d.execute-api.ap-northeast-2.amazonaws.com/2020-05-09/Project-result',
+          type: 'POST',
+          data: JSON.stringify(inputData),
+          contentType: 'application/json; charset=utf-8',
+          async: false,
+          success: function (data) {
+            //alert("SUCCESS")
+            //callback(data)
+          },
+          error: function (request, error) {
+            alert("ERROR")
+            alert("code:"+request.status+"\n"+"message"+request.responseText+"\n"+"error:"+error)
+          }
+        });
+        location.href = 'result.html'
+        cosole.log('동기식처리 성공')
+      }
+    </script>
+</head>
+<body>
+  <h2>임시 테스트 페이지 </h2>
+
+  <p>
+  Adaptability.<br>
+  
+  Q1.반려견 입양 시 아파트 내에서 키울 예정인가요?
+  <input type="radio" name="answer1" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer1" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer1" value="3" />보통이다.
+  <input type="radio" name="answer1" value="4" />그렇다.
+  <input type="radio" name="answer1" value="5" />매우 그렇다.
+  <br>
+  Q2. 반려견 입양이 처음이라 서툰가요?
+  <input type="radio" name="answer2" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer2" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer2" value="3" />보통이다.
+  <input type="radio" name="answer2" value="4" />그렇다.
+  <input type="radio" name="answer2" value="5" />매우 그렇다.
+  <br>
+  Q3. 일상 패턴이 일정하지 않고 유동적인 편인가요?
+  <input type="radio" name="answer3" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer3" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer3" value="3" />보통이다.
+  <input type="radio" name="answer3" value="4" />그렇다.
+  <input type="radio" name="answer3" value="5" />매우 그렇다.
+  <br>
+  Q4. 집이 비어 있는 시간이 긴가요?
+  <input type="radio" name="answer4" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer4" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer4" value="3" />보통이다.
+  <input type="radio" name="answer4" value="4" />그렇다.
+  <input type="radio" name="answer4" value="5" />매우 그렇다.
+  <br>
+  Q5. 거주하는 지역의 기후가 추운 편인가요?
+  <input type="radio" name="answer5" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer5" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer5" value="3" />보통이다.
+  <input type="radio" name="answer5" value="4" />그렇다.
+  <input type="radio" name="answer5" value="5" />매우 그렇다.
+  <br>
+  Q6. 거주하는 지역의 기후가 더운 편인가요?
+  <input type="radio" name="answer6" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer6" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer6" value="3" />보통이다.
+  <input type="radio" name="answer6" value="4" />그렇다.
+  <input type="radio" name="answer6" value="5" />매우 그렇다.
+  </p>
+  <p>
+  All Around Friendliness.<br>
+
+  Q7. 반려견이 가족에게 애착을 크게 보이길 원하시나요?
+  <input type="radio" name="answer7" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer7" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer7" value="3" />보통이다.
+  <input type="radio" name="answer7" value="4" />그렇다.
+  <input type="radio" name="answer7" value="5" />매우 그렇다.
+  <br>
+  Q8. 변려견이 어린 아이들과 친화적인 것을 원하시나요?
+  <input type="radio" name="answer8" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer8" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer8" value="3" />보통이다.
+  <input type="radio" name="answer8" value="4" />그렇다.
+  <input type="radio" name="answer8" value="5" />매우 그렇다.
+  <br>
+  Q9. 변려견이 다른 강아지들과 잘 어울리는 것을 원하시나요?
+  <input type="radio" name="answer9" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer9" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer9" value="3" />보통이다.
+  <input type="radio" name="answer9" value="4" />그렇다.
+  <input type="radio" name="answer9" value="5" />매우 그렇다.
+  <br>
+  Q10. 반려견이 낯선 사람에게도 친화적인 태도를 원하시나요?
+  <input type="radio" name="answer10" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer10" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer10" value="3" />보통이다.
+  <input type="radio" name="answer10" value="4" />그렇다.
+  <input type="radio" name="answer10" value="5" />매우 그렇다.
+  </p>
+  <p>
+  Health Grooming.<br>
+ 
+  Q11. 반려견의 털 날림을 어느정도 감당하실 수 있나요?
+  <input type="radio" name="answer11" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer11" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer11" value="3" />보통이다.
+  <input type="radio" name="answer11" value="4" />그렇다.
+  <input type="radio" name="answer11" value="5" />매우 그렇다.
+  <br>
+  Q12. 반려견이 침을 흘려도 신경이 쓰이지 않으신가요?
+  <input type="radio" name="answer12" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer12" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer12" value="3" />보통이다.
+  <input type="radio" name="answer12" value="4" />그렇다.
+  <input type="radio" name="answer12" value="5" />매우 그렇다.
+  <br>
+  Q13. 반려견의 털 손질 시 시간과 비용(미용샵)을 들일 수 있나요?
+  <input type="radio" name="answer13" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer13" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer13" value="3" />보통이다.
+  <input type="radio" name="answer13" value="4" />그렇다.
+  <input type="radio" name="answer13" value="5" />매우 그렇다.
+  <br>
+  Q14. 반려견들은 품종마다 갖고 태어나는 유전적인 건강 문제가 있습니다. 이에 대해 어느 정도의 금전적 지원이 가능하신가요?
+  <input type="radio" name="answer14" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer14" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer14" value="3" />보통이다.
+  <input type="radio" name="answer14" value="4" />그렇다.
+  <input type="radio" name="answer14" value="5" />매우 그렇다.
+  <br>
+  Q15. 반려견의 배식에 대해 매 끼 정량 측정 등을 신경을 쓸 여유가 있으신가요?
+  <input type="radio" name="answer15" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer15" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer15" value="3" />보통이다.
+  <input type="radio" name="answer15" value="4" />그렇다.
+  <input type="radio" name="answer15" value="5" />매우 그렇다.
+  <br>
+  Q16. 어느 정도 크기의 반려견을 원하시나요?
+  <input type="radio" name="answer16" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer16" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer16" value="3" />보통이다.
+  <input type="radio" name="answer16" value="4" />그렇다.
+  <input type="radio" name="answer16" value="5" />매우 그렇다.
+  </p>
+  <p>
+  Trainability.<br>
+
+  Q17. 반려견들마다 훈련의 반복 정도가 다릅니다. 반려견을 쉽게 훈련시키길 원하시나요?
+  <input type="radio" name="answer17" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer17" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer17" value="3" />보통이다.
+  <input type="radio" name="answer17" value="4" />그렇다.
+  <input type="radio" name="answer17" value="5" />매우 그렇다.
+  <br>
+  Q18. 반려견이 얼마만큼 빠르게 훈련을 습득하길 바라시나요?
+  <input type="radio" name="answer18" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer18" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer18" value="3" />보통이다.
+  <input type="radio" name="answer18" value="4" />그렇다.
+  <input type="radio" name="answer18" value="5" />매우 그렇다.
+  <br>
+  Q19. 반려견들은 어릴 때 무언가를 무는 본능이 있습니다. 사람을 물어서는 안된다는 것을 훈육 시킬 수 있으신가요?
+  <input type="radio" name="answer19" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer19" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer19" value="3" />보통이다.
+  <input type="radio" name="answer19" value="4" />그렇다.
+  <input type="radio" name="answer19" value="5" />매우 그렇다.
+  <br>
+  Q20. 반려견들마다 사냥 본능이 각기 다릅니다. 반려견보다 작은 동물을 곁에 두지 않을 수 있나요?
+  <input type="radio" name="answer20" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer20" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer20" value="3" />보통이다.
+  <input type="radio" name="answer20" value="4" />그렇다.
+  <input type="radio" name="answer20" value="5" />매우 그렇다.
+  <br>
+  Q21. 소음에 얼마 만큼 둔감하시나요?
+  <input type="radio" name="answer21" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer21" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer21" value="3" />보통이다.
+  <input type="radio" name="answer21" value="4" />그렇다.
+  <input type="radio" name="answer21" value="5" />매우 그렇다.
+  <br>
+  Q22. 반려견이 자신의 시야 안에 들어오지 않아도 불안하지 않나요?
+  <input type="radio" name="answer22" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer22" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer22" value="3" />보통이다.
+  <input type="radio" name="answer22" value="4" />그렇다.
+  <input type="radio" name="answer22" value="5" />매우 그렇다.
+  </p>
+  <p>
+  Exercise Needs.<br>
+ 
+  Q23. 많은 양의 운동량을 필요로 하는 반려견을 원하시나요?
+  <input type="radio" name="answer23" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer23" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer23" value="3" />보통이다.
+  <input type="radio" name="answer23" value="4" />그렇다.
+  <input type="radio" name="answer23" value="5" />매우 그렇다.
+  <br>
+  Q24. 정신 사나운 반려견을 잘 다룰 수 있나요?
+  <input type="radio" name="answer24" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer24" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer24" value="3" />보통이다.
+  <input type="radio" name="answer24" value="4" />그렇다.
+  <input type="radio" name="answer24" value="5" />매우 그렇다.
+  <br>
+  Q25. 본인이 활동적인 편이라 반려견에게 운동을 자주 시켜줄 수 있나요?
+  <input type="radio" name="answer25" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer25" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer25" value="3" />보통이다.
+  <input type="radio" name="answer25" value="4" />그렇다.
+  <input type="radio" name="answer25" value="5" />매우 그렇다.
+  <br>
+  Q26. 반려견과 얼마만큼 놀이를 해줄 수 있나요?
+  <input type="radio" name="answer26" value="1" />전혀 그렇지 않다.
+  <input type="radio" name="answer26" value="2" />약간 그렇지 않다.
+  <input type="radio" name="answer26" value="3" />보통이다.
+  <input type="radio" name="answer26" value="4" />그렇다.
+  <input type="radio" name="answer26" value="5" />매우 그렇다.<br>
+  
+  <input type="button" id="button" value="테스트 결과 전송">
+
+</body>
+</html>
